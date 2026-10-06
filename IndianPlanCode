@@ -1,7 +1,0 @@
-plans <- read.csv("indiana_aca_plans.csv")
-head(plans)
-
-plot(plans$deductible, plans$premium,
-     xlab = "Deductible ($)",
-     ylab = "Monthly Premium ($)")
-abline(lm(premium ~ deductible, data = plans))
